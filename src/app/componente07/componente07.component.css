@@ -1,0 +1,10 @@
+.fontVerde{
+  color: green;
+  font-size: large;
+}
+
+.fontVermelha{
+  color: red;
+  font-size: large;
+  font-style: italic;
+}

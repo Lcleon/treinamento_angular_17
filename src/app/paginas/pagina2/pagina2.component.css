@@ -1,0 +1,16 @@
+body{
+  width: 1280px;
+  height: 500px;
+  background-color: rgb(43, 158, 114);
+}
+.container {
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Faz o contêiner ocupar toda a altura da tela */
+}
+
+h1{
+  color: rgb(2, 2, 2);
+}
+
