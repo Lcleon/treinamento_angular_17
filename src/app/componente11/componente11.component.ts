@@ -5,7 +5,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { Pessoa } from '../modelo/pessoa';
+import { Pessoa } from '../modelo/Pessoa';
 import { CommonModule } from '@angular/common';
 
 @Component({
