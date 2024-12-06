@@ -7,6 +7,7 @@ import {
 } from '@angular/forms';
 import { Pessoa } from '../modelo/Pessoa';
 import { CommonModule } from '@angular/common';
+import { validateHorizontalPosition } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-componente11',
@@ -21,12 +22,13 @@ export class Componente11Component {
 
   //Objeto de formulário
   formulario = new FormGroup({
-    nome: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    nome: new FormControl('',[Validators.required, Validators.minLength(3)]),
     idade: new FormControl(null, [
       Validators.required,
       Validators.min(0),
       Validators.max(120),
-      Validators.pattern('^[o-9]*$'), //Apenas números
+      Validators.pattern(/^\d+$/), // Apenas números
+
     ]),
     cidade: new FormControl('', [Validators.required, Validators.minLength(3)]),
   });
